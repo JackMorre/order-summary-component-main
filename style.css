@@ -1,0 +1,206 @@
+/* ## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Pale blue: hsl(225, 100%, 94%)
+- Bright blue: hsl(245, 75%, 52%)
+
+### Neutral
+
+- Very pale blue: hsl(225, 100%, 98%)
+- Desaturated blue: hsl(224, 23%, 55%)
+- Dark blue: hsl(223, 47%, 23%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 16px
+
+### Font
+
+- Family: [Red Hat Display](https://fonts.google.com/specimen/Red+Hat+Display)
+- Weights: 500, 700, 900 */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-image: url(/images/pattern-background-desktop.svg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-color: hsl(225, 100%, 94%);
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.container {
+    width: 363px;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+}
+
+.main-img {
+    width: 363px;
+}
+
+.summary-container {
+    padding: 38px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.order-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.order-text {
+    text-align: center;
+    font-size: 13.5px;
+    color: hsl(224, 23%, 55%);
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.small-container {
+    background-color: hsl(225, 100%, 98%);
+    padding: 18px;
+    display: flex;
+    gap: 20px;
+    border-radius: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.music-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.price-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.price-text {
+    font-size: 14px;
+    font-weight: 900;
+}
+
+.price-plan {
+    font-size: 13.5px;
+    color: hsl(224, 23%, 55%);;
+}
+
+.change-plan {
+    font-size: 11px;
+    color: hsl(245, 75%, 52%);
+    font-weight: 700;
+    margin-left: auto;
+    align-self: center;
+    transition: all 0.1s ease-in;
+}
+
+.change-plan:hover {
+    color: hsl(245, 60%, 60%);
+    text-decoration: none;
+}
+
+.payment-btn {
+    cursor: pointer;
+    font-size: 12px;
+    border: none;
+    color: white;
+    font-weight: 700;
+    background-color: hsl(245, 75%, 52%);
+    padding: 12px;
+    border-radius: 10px;
+    font-family: 'Red Hat Display', sans-serif;
+    box-shadow: 0px 5px 20px hsla(245, 75%, 52%, 0.437);
+    margin-bottom: 8px;
+
+    transition: all 0.2s ease-in;
+}
+
+.payment-btn:hover {
+    background-color: hsl(245, 60%, 60%);
+}
+
+.cancel-btn {
+    cursor: pointer;
+    background-color: unset;
+    border: none;
+    font-size: 12px;
+    font-weight: 900;
+    font-family: 'Red Hat Display', sans-serif;
+    color: hsl(224, 23%, 55%);
+    transition: all 0.2s ease-in;
+}
+
+.cancel-btn:hover {
+    color: black;
+}
+
+@media (max-width: 375px) {
+    .container {
+        width: 325px;
+    }
+
+    .summary-container {
+        padding: 24px;
+    }
+
+    .order-title {
+        font-size: 22px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .order-text {
+        padding: 0 10px;
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .music-icon {
+        width: 45px;
+        height: 45px;
+    }
+
+    .change-plan {
+        font-size: 12px;
+    }
+
+    .payment-btn {
+        padding: 16px;
+        font-size: 15px;
+    }
+
+    .cancel-btn {
+        font-size: 16px;
+    }
+}
