@@ -1,6 +1,6 @@
 # Frontend Mentor - Order summary card solution
 
-This is a solution to the [Order summary card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Order summary card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -33,7 +33,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Add live site URL here](https://order-summary-componant-jack-morre.netlify.app/)
 
 ## My process
 
@@ -43,8 +43,6 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - Desktop-first workflow
-
-
 
 ### What I learned
 
@@ -58,15 +56,13 @@ I found out pretty early that background size was not going to work because the 
 
 I thought this was bad practise but because I knew the exact with of the container, setting the width to exactly cover the full width was the easier method for me.
 
-
-
 ```css
 .container {
-    width: 363px;
+	width: 363px;
 }
 
 .main-img {
-    width: 363px;
+	width: 363px;
 }
 ```
 
@@ -74,12 +70,11 @@ This made sure that the image would cover the full width of the container and th
 
 Flexbox is fun
 
-Flexbox is a humans best friend when it comes to centuring anything in web design. 
+Flexbox is a humans best friend when it comes to centuring anything in web design.
 
 A lot of the containers in the project have been centered with flexbox as it seems like the easiest method to be able to center pretty much anything.
 
 I used it to center the image as i didn't really know of any other way to be able to do it. It worked perfectly and actually better than intend. - if there is a better solution for this please do let me know.
-  
 
 ### Continued development
 
@@ -100,5 +95,3 @@ Use this section to outline areas that you want to continue focusing on in futur
 - Website - I don't have a website... yet.
 - Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
 - Twitter - [@yourusername](https://www.twitter.com/dollywob)
-
-
